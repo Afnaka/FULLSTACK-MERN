@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h3>Event Registration Form</h3>
+    <form action="" method="post">
+        <p>
+            <label for="name">Full Name:</label>
+            <input type="text" name="user_name" id="name">
+        </p>
+        <p>
+            <label for="email">Email_id</label>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            <label for="phn">Phone Number:</label>
+            <input type="tel" name="phn" id="phn" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"placeholder="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </p>
+        <p>
+            <label for="no_attendes">Number of Attendes:</label>
+            <input type="number" name="no_attendes" id="no_attendes" min="1" max="10">
+        </p>
+        <p>
+            <label for="edate">Event Date:</label>
+            <input type="date" name="edate" id="edate">
+        </p>
+        <p>
+            <label for="etime">Event Time:</label>
+            <input type="time" name="etime" id="etime">
+        </p>
+        <p>
+            <label for="etype">Event Type:</label>
+            <select name="type" id="etype">
+                <option value="" placeholder="Select an event type">Select an event type</option>
+                <option value="etype">Conference</option>
+                <option value="etype">Workshop</option>
+                <option value="etype">Webinar</option>
+            </select>
+        </p>
+        <p>
+            <label for="erestiriction">Dietary Restrictions: </label>
+            <label for="erestiriction">Vegetarian</label>
+            <input type="checkbox" name="erestiriction" id="erestiriction">
+            <label for="erestiriction">Gluten-Free</label>
+            <input type="checkbox" name="erestiriction" id="erestiriction">
+        </p>
+        <p>
+            <label for="tsize">T-shirt Size:</label>
+            <label for="tsize">S</label>
+            <input type="radio" name="tsize" id="tsize">
+            <label for="tsize">M</label>
+            <input type="radio" name="tsize" id="tsize">
+            <label for="tsize">L</label>
+            <input type="radio" name="tsize" id="tsize">
+            <label for="tsize">XL</label>
+            <input type="radio" name="tsize" id="tsize">
+        </p>
+        <p>
+            <label for="c/q">Comments/Questions:</label>
+            <textarea name="c/q" id="c/q"></textarea>
+        </p>
+        <p>
+            <button type="submit">Resigter</button>
+        </p>
+    </form>
+</body>
+</html>
